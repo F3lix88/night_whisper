@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: night-whisper
+    env: static
+    region: oregon
+    plan: free
+    branch: main
+    staticPublishPath: build/web
+    buildCommand: bash build.sh
